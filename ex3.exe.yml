@@ -1,0 +1,9 @@
+-
+ name: example on yum module
+ hosts: client1
+ tasks:
+  - name: code to remove git application
+    yum:
+     name: git
+     state: absent
+     
