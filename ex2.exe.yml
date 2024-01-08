@@ -6,4 +6,3 @@
     yum:
      name: net-tools
      state: install
-     
