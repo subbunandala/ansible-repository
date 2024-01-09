@@ -6,7 +6,7 @@
     yum:
      name: "{{item}}"
      state: present
-    with_itens:
+    with_items:
      - git
      - docker
      - net-tools
