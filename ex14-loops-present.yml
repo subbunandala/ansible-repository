@@ -6,9 +6,8 @@
     yum:
      name: "{{item}}"
      state: absent
-     loop:
+    loop:
      - git
      - docker
      - net-tools
      - finger
-     
