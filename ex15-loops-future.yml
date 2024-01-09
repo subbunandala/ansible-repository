@@ -1,0 +1,9 @@
+-
+ name: example on loops
+ hosts: client1
+ tasks:
+  - name: ansible loop example
+    yum:
+     name: ['git','finger','docker','httpd','net-tools']
+     state: present
+     
