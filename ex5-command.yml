@@ -1,0 +1,21 @@
+-
+ name: pb on command module
+ hosts: client1
+ tasks:
+  - name: code to install git app
+    yum:
+     name: git
+     state: present
+
+  - name: code to configure the username of git
+    command:
+     cmd: git config --global user.name subbu
+
+  - name: code to configure the user.emmail in git
+    command:
+     cmd: git config --global user.email subbunandala@gmail.com
+
+  - name: code to create a folder on client name
+    command:
+     cmd: mkdir india
+     
