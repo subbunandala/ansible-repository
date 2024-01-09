@@ -3,7 +3,7 @@
  hosts: client1
  tasks:
   - naame: code to install httpd application
-    yum:
+     yum:
      name: httpd
      state: present
 
@@ -11,4 +11,3 @@
     service:
      name: httpd
      state: started
-     
