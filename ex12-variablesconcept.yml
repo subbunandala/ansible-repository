@@ -1,0 +1,24 @@
+-
+ name: pb for variable concept
+ hosts: all
+ vars:
+  a: 10
+  b: 20
+  c: "welcome to india"
+  tasks:
+   - name: below code to create a directory
+     file:
+      path: /opt/var-concept
+      state: directory
+
+   - name: below to create a file data.txt
+     file:
+      path: /opt/var-concept/data.txt
+      state: touch
+
+   - name: below code to write variables into the file
+     lineinfile: 
+      path: /opt/var-concept/data.txt
+      state: present
+      line: "the value of A is {{a}} \n the value of B is {{b}} \n the value of c is {{c}}"
+      
