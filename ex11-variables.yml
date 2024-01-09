@@ -1,0 +1,20 @@
+-
+ name: pb on use case of variables concept
+ hosts: client1
+ vars: 
+  a: 10
+  b: 20.50
+  c: "india is great"
+  d: 'ap28dco505'
+  tasks:
+   - name: code to crate a file
+     file:
+      path: /opt/variables.txt
+      state: touch
+
+   - name: code to write a message into file
+     lineinfile:
+      path: /opt/variables.txt
+      state: present
+      line: "the value of is {{a}} and b is {{b}} and c is {{c}} and d is {{d}}"
+      
