@@ -1,0 +1,10 @@
+-
+ name: replace "HELLO WORLD" with "INDIA IS GREAT"
+ hosts: client1
+ tasks: 
+  - name: replace the WORLD
+    replace: 
+     path: /opt/india/russia.txt
+     regexp: 'INDIA IS GREAT'
+     replace: 'devops by subbunandala'
+     
