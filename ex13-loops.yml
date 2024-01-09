@@ -1,0 +1,14 @@
+-
+ name: pb on use case of loops
+ hosts: client1
+ tasks:
+  - name: below code for yum installations using loops
+    yum:
+     name: "{{item}}"
+     state: present
+     with_itens:
+     - git
+     - docker
+     - net-tools
+     - finger
+     
