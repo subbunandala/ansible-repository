@@ -5,9 +5,9 @@
   - name: code to create file
     file:
      path: /opt/notes.txt
+     state: touch
 
   - name: code to write message into file
     copy:
      content: 'hello world'
      dest: /opt/notes.txt
-     
