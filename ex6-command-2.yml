@@ -1,0 +1,16 @@
+-
+ name: pb on use case of command module
+ hosts: client1
+ tasks:
+  - name: code to create a folder
+    command:
+     cmd: mkdir /opt/russia
+
+  - name: code to create a file under that folder
+    command:
+     cmd: touch /opt/russia/sample1
+
+  - name: code to remove git application
+    command: 
+     cmd: yum remove -y git
+     
