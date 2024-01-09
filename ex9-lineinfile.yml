@@ -1,0 +1,10 @@
+-
+ name: replace "hello world" with "india is great" in the file
+ hosts: client1
+ tasks:
+  - name: replace the world
+    lineinfile:
+     path: /opt/india/russia.txt
+     regexp: '.*hello world.*'
+     line: 'india is great'
+     
