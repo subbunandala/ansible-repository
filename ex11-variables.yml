@@ -17,4 +17,4 @@
       path: /opt/variables.txt
       state: present
       line: "the value of is {{a}} and b is {{b}} and c is {{c}} and d is {{d}}"
-      
+     
