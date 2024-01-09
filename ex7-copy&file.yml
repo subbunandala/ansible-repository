@@ -1,0 +1,13 @@
+-
+ name: pb on example of copy and file module
+ hosts: client1
+ tasks:
+  - name: code to create file
+    file:
+     path: /opt/notes.txt
+
+  - name: code to write message into file
+    copy:
+     content: 'hello world'
+     dest: /opt/notes.txt
+     
