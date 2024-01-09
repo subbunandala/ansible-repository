@@ -6,7 +6,7 @@
   b: 20.50
   c: "india is great"
   d: 'ap28dco505'
-  tasks:
+ tasks:
    - name: code to crate a file
      file:
       path: /opt/variables.txt
@@ -17,4 +17,4 @@
       path: /opt/variables.txt
       state: present
       line: "the value of is {{a}} and b is {{b}} and c is {{c}} and d is {{d}}"
-     
+ 
