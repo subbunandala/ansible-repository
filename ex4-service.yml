@@ -2,7 +2,7 @@
  name: pb on yum and service example
  hosts: client1
  tasks:
-  - naame: code to install httpd application
+  - name: code to install httpd application
      yum:
      name: httpd
      state: present
